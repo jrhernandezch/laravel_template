@@ -1,0 +1,140 @@
+body {
+  padding-top: 56px;
+}
+
+.background-section {
+  background-color: #efefef !important;
+}
+
+a {
+  color: #343a40;
+  transition-duration: 1s;
+}
+
+a:hover {
+  color: #007bff;
+  outline: none;
+  text-decoration: none;
+}
+
+img {
+  transition-duration: 1s;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+footer a {
+  color: white;
+  transition-duration: 1s;
+}
+
+footer a:hover {
+  color: #007bff;
+  outline: none;
+  text-decoration: none;
+}
+
+#header {
+  height: 56px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  background-image: -ms-linear-gradient(left, #9e2e3c, #691b25);
+}
+
+#header a {
+  color: #343a40;
+}
+
+#header a:hover {
+  color: #007bff;
+}
+
+#header.header-fixed {
+  background: #343a40;
+  height: 56px;
+  transition: all 0.5s;
+}
+
+#header.header-fixed a {
+  color: white;
+}
+
+#header.header-fixed a:hover {
+  color: #007bff;
+}
+
+/* Carousel
+--------------------------------*/
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item h3, p{
+  opacity: 1;
+}
+
+.carousel-item .carousel-caption{
+  background-color: #343a40;
+  opacity: 0.9;
+}
+
+.carousel-caption {
+  right: 0;
+  left: 0;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.carousel-item img {
+  opacity: 1 !important;
+}
+
+/* Sections Header
+--------------------------------*/
+.section-header .section-title {
+  font-size: 32px;
+  color: #111;
+  text-align: center;
+  font-weight: 400;
+}
+
+.section-header .section-description {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #777;
+  font-style: italic;
+}
+
+.section-header .section-divider {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #111;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/* Services
+--------------------*/
+.image-service img {
+  width: 100%;
+}
