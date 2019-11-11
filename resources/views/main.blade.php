@@ -32,7 +32,7 @@
 
   <header id="header">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="nav-bar">
       <div class="container">
         <a class="navbar-brand" href="{{ url('/portada') }}" alt="logo" title="logo">
           @foreach ($infologo as $logo)
@@ -122,8 +122,12 @@
     $(window).scroll(function() {
       if ($(this).scrollTop() > 20) {
         $('#header').addClass('header-fixed');
+        $('#nav-bar').addClass('bg-dark');
+        $('#nav-bar').removeClass('bg-light');
       } else {
         $('#header').removeClass('header-fixed');
+        $('#nav-bar').removeClass('bg-dark');
+        $('#nav-bar').addClass('bg-light');
       }
     });
   </script>
