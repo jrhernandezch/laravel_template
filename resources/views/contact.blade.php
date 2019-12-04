@@ -47,30 +47,37 @@
       <div class="row">
         <div class="col-lg-8 mb-4">
           <h3>Envia'ns un missatge</h3>
-          <form name="sentMessage" id="contactForm" >
+          <form name="sentMessage" action="{{ url('ticket')}}" method="POST" id="contactForm" >
+            {{ csrf_field() }}
             <div class="control-group form-group">
               <div class="controls">
                 <label>Nom</label>
-                <input type="text" class="form-control" id="name" required data-validation-required-message="Si us plau, entreu el vostre nom.">
+                <input type="text" class="form-control" name="name" id="name" required placeholder="Si us plau, entreu el vostre nom.">
                 <p class="help-block"></p>
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
                 <label>Telèfon</label>
-                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Si us plau, entreu el vostre telèfon.">
+                <input type="tel" class="form-control" name="phone" id="phone" required placeholder="Si us plau, entreu el vostre telèfon.">
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
                 <label>Direcció de correu</label>
-                <input type="email" class="form-control" id="email" required data-validation-required-message="Si us plau, entreu el vostre e-mail.">
+                <input type="email" class="form-control" name="email" id="email" required placeholder="Si us plau, entreu el vostre e-mail.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Assumpte</label>
+                <input type="text" class="form-control" name="subject" id="subject" required placeholder="Si us plau, entreu el assumpte.">
               </div>
             </div>
             <div class="control-group form-group">
               <div class="controls">
                 <label>Missatge</label>
-                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Si us plau, entreu el vostre missatge" maxlength="999" style="resize:none"></textarea>
+                <textarea rows="10" cols="100" class="form-control" name="message" id="message" required placeholder="Si us plau, entreu el vostre missatge" maxlength="999" style="resize:none"></textarea>
               </div>
             </div>
             <div id="success"></div>
