@@ -35,7 +35,7 @@
         @foreach($aboutteam as $team)
           <div class="col-lg-4 mb-4">
             <div class="card h-100 text-center">
-              <img class="card-img-top" src="{!! asset('img/about/'.$team->image) !!}" alt="{!! $team->name !!}">
+              <img class="card-img-top" src="{!! asset('img/team/'.$team->image) !!}" alt="{!! $team->name !!}">
               <div class="card-body">
                 <h4 class="card-title pt-3">{!! $team->name !!}</h4>
                 <h6 class="card-subtitle mb-2 text-muted pt-3">{!! $team->position !!}</h6>
