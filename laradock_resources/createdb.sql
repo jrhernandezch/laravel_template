@@ -26,8 +26,8 @@
 #GRANT ALL ON `dev_db_3`.* TO 'default'@'%' ;
 
 docker-compose exec mysql bash
-mysql -uroot -proot laravel_business < /docker-entrypoint-initdb.d/jhernandezch_base_de_dades.sql
 mysql -uroot -proot
 FLUSH PRIVILEGES;
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';
 exit;
+ 
