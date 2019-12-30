@@ -30,6 +30,8 @@ mysql -uroot -proot
 FLUSH PRIVILEGES;
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';
 
+use laravel_business;
+
 -- phpMyAdmin SQL Dump
 -- version 4.8.5
 -- https://www.phpmyadmin.net/
